@@ -122,24 +122,75 @@ group by income_group;
 --------------- SECTION 5 — Subqueries & Nested Analysis 
 
 -- 17. Find applicants whose loan amount is greater than the overall average loan amount. 
-
+select * from loan
+where LoanAmount > (
+			select avg(LoanAmount) 
+            from loan);
+            
 -- 18. Identify the property area with the highest average total income. 
+select Property_Area, avg(ApplicantIncome + CoapplicantIncome) as total_income
+from loan
+group by Property_Area
+order by total_income desc 
+limit 1;
+
 
 -- 19. List all applicants whose income is above the average income of their education category. 
+
 
 ------------ SECTION 6 — Window Functions 
 
 -- 20. Rank applicants based on total income (highest income rank = 1). 
+select Loan_ID ,
+		ApplicantIncome + CoapplicantIncome as total_income,
+        rank() over (order by (ApplicantIncome + CoapplicantIncome) desc) as Rank_number
+from loan;                    
+
 
 -- 21. Show average loan amount per property area using a window function. 
+select Loan_ID, Property_Area,LoanAmount,
+		avg(LoanAmount) 
+		over ( partition by Property_Area) as avg_Area_loan
+from loan;
+
+						-- or
+                        
+select distinct (Property_Area),
+			avg(LoanAmount) over(partition by Property_Area) as avg_Area_loan
+from loan;
 
 -- 22. Calculate approval rate by education using grouping or window function. 
+
 
 ------------- SECTION 7 — Business Insights & Combined Analysis 
 
 -- 23. Compare approval rate by credit history and education level to find which combination performs best. 
+select Credit_History, Education, count(*) as total_applicants,
+		sum(case when Loan_Status = 'Y' then 1 else 0 end) as approvals,
+        round(sum(case when Loan_Status = 'Y' then 1 else 0 end)/count(*)*100,2) as approval_rate
+from loan
+group by Credit_History, Education
+order by approval_rate desc;
+
 
 -- 24. Find the combination of property area and education with the highest approval rate. 
+select property_Area,
+       education, 
+	   count(*) as total_applicants, 
+       sum(case when loan_status = 'Y' then 1 else 0 end) as approvals,
+	   round(sum(case when loan_status = 'Y' then 1 else 0 end)/count(*)*100, 2) as approval_rate
+from loan 
+group by property_Area, education
+order by approval_rate desc;
 
 -- 25. Compare approval rate for self-employed vs non-self-employed applicants by credit 
 -- history.
+
+select Self_Employed,
+       Credit_History, 
+	   count(*) as total_applicants, 
+       sum(case when loan_status = 'Y' then 1 else 0 end) as approvals,
+	   round(sum(case when loan_status = 'Y' then 1 else 0 end)/count(*)*100, 2) as approval_rate
+from loan 
+group by Self_Employed, Credit_History
+order by approval_rate desc;
