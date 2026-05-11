@@ -183,9 +183,7 @@ from loan
 group by property_Area, education
 order by approval_rate desc;
 
--- 25. Compare approval rate for self-employed vs non-self-employed applicants by credit 
--- history.
-
+-- 25. Compare approval rate for self-employed vs non-self-employed applicants by credit history.
 select Self_Employed,
        Credit_History, 
 	   count(*) as total_applicants, 
