@@ -534,7 +534,9 @@ Version 3.0  📌  Real-Time Applicant Scoring via API + Cloud Deployment
 
 <div align="center">
 
-### **Md Matloob Alam**
+<img src="https://avatars.githubusercontent.com/alam292?v=4" width="100" style="border-radius:50%" alt="Author"/>
+
+### **Md MatlooB Alam**
 
 [![GitHub](https://img.shields.io/badge/GitHub-@alam292-181717?style=for-the-badge&logo=github)](https://github.com/alam292)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/md-matloob-a-016408229/)
