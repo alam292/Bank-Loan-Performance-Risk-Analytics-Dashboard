@@ -1,11 +1,16 @@
 <div align="center">
 
 <!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Loan%20Approval%20%26%20Risk%20Analysis&fontSize=38&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Turning%20Financial%20Data%20into%20Actionable%20Lending%20Insights&descAlignY=60&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,19,24&height=220&section=header&text=💰%20Loan%20Approval%20%26%20Risk%20Analysis&fontSize=36&fontColor=fff&animation=twinkling&fontAlignY=40&desc=Turning%20Financial%20Data%20into%20Actionable%20Lending%20Insights&descAlignY=62&descSize=17&descColor=d0e8ff" width="100%"/>
+
+<br/>
+
+<!-- Animated Subtitle Title -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&pause=800&color=F2C811&center=true&vCenter=true&width=800&height=50&lines=🏦+Loan+Approval+%26+Risk+Analysis" alt="Title" />
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=💰+Loan+Approval+%26+Risk+Analysis+Project;📊+Credit+Risk+%26+Applicant+Profile+Analysis;🔬+EDA+%7C+Python+%7C+SQL+%7C+Power+BI;💡+Data-Driven+Lending+Decision+Making" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00D4FF&center=true&vCenter=true&width=750&lines=📊+Credit+Risk+%26+Applicant+Profile+Analysis;🔬+EDA+%7C+Python+%7C+SQL+%7C+Power+BI;💡+Data-Driven+Lending+Decision+Making;🖥️+6-Page+Interactive+Power+BI+Dashboard;🗄️+25+SQL+Queries+across+7+Business+Sections" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -382,16 +387,51 @@ ORDER BY approval_rate DESC;
 
 The Power BI dashboard provides a comprehensive 6-page interactive report with filters and KPI cards across all dimensions of loan approval analysis.
 
-### 📋 Dashboard Pages
+### 📋 Dashboard Pages — Screenshots
 
-| Page | Title | Focus |
-|:---:|:---|:---|
-| 1 | 🏠 **Overview Dashboard** | Total KPIs, approval rate, income group breakdown, property area |
-| 2 | 👥 **Applicant Demographics** | Gender, education, marital status, self-employment analysis |
-| 3 | 💰 **Financial Insights** | Income vs loan amount, income group summary, co-applicant analysis |
-| 4 | 🏘️ **Property & Location** | Applications and approval rates by property area |
-| 5 | 💳 **Credit Risk Analysis** | Credit history distribution, approval by credit score, married status |
-| 6 | 💡 **Advanced Insights** | Target segments, approval trends, multi-dimensional comparisons |
+---
+
+#### 🏠 Page 1 — Overview Dashboard
+> Total KPIs, approval rate, income group breakdown, property area performance
+
+![Overview Dashboard](images/dashboard_overview.jpg)
+
+---
+
+#### 👥 Page 2 — Applicant Demographics
+> Gender, education, marital status, self-employment analysis
+
+![Applicant Demographics](images/dashboard_demographics.jpg)
+
+---
+
+#### 💰 Page 3 — Financial Insights
+> Income vs loan amount, income group summary, co-applicant income breakdown
+
+![Financial Insights](images/dashboard_financial.jpg)
+
+---
+
+#### 🏘️ Page 4 — Property & Location
+> Applications and approval rates by property area (Semiurban / Urban / Rural)
+
+![Property & Location](images/dashboard_property.jpg)
+
+---
+
+#### 💳 Page 5 — Credit Risk Analysis
+> Credit history distribution, approval rate by credit score, marital status impact
+
+![Credit Risk Analysis](images/dashboard_credit.jpg)
+
+---
+
+#### 💡 Page 6 — Advanced Insights
+> Target customer segments, approval trends, multi-dimensional matrix comparisons
+
+![Advanced Insights](images/dashboard_insights.jpg)
+
+---
 
 ### 📊 Live KPIs (Overview Page)
 
@@ -534,9 +574,7 @@ Version 3.0  📌  Real-Time Applicant Scoring via API + Cloud Deployment
 
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/alam292?v=4" width="100" style="border-radius:50%" alt="Author"/>
-
-### **Md MatlooB Alam**
+### **Md Matloob Alam**
 
 [![GitHub](https://img.shields.io/badge/GitHub-@alam292-181717?style=for-the-badge&logo=github)](https://github.com/alam292)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/md-matloob-a-016408229/)
